@@ -1,28 +1,3 @@
-# dependecies installed by npm
-node_modules
-web_modules
-
-# build artefacts
-src/_site
-dist
-
-# secrets
-.env
-
-# logs
-*.log
-report.html
-
-# macOS related files
-.DS_Store
-
-# version manager
-.tool-versions
-
-# Local Netlify folder
-.netlify
-
-
 # Logs
 logs
 *.log
@@ -63,7 +38,7 @@ bower_components
 build/Release
 
 # Dependency directories
-#node_modules/
+node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
