@@ -1,0 +1,19 @@
+---
+layout: 'layouts/home.html'
+title: 'Pug template engine'
+---
+
+- var youAreUsingPug = true;
+
+h1 Pug - node template engine
+#container.col
+  if youAreUsingPug
+    p You are amazing
+  else
+    p Get on it!
+  p.
+    Pug is a terse and ...
+    strong focus on performance ...
+
+  include:markdown-it _includes/pug_tmpl/article.md
+

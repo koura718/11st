@@ -1,4 +1,5 @@
 const fs = require('fs');
+const pug = require('pug');
 
 module.exports = function (config) {
   config.setLiquidOptions({
@@ -12,6 +13,10 @@ module.exports = function (config) {
   config.addPassthroughCopy('./src/manifest.json');
   config.addPassthroughCopy('./src/robots.txt');
 
+  // Setting for PUG
+  config.setLibrary("pug", pug);
+  config.setPugOptions({ debug: true });
+  
   // 404
   config.setBrowserSyncConfig({
     callbacks: {
@@ -33,7 +38,7 @@ module.exports = function (config) {
       output: 'src/_site',
     },
     passthroughFileCopy: true,
-    templateFormats: ['html', 'md', 'liquid'],
+    templateFormats: ['html', 'md', 'liquid', 'pug'],
     htmlTemplateEngine: 'liquid',
     dataTemplateEngine: 'liquid',
     markdownTemplateEngine: 'liquid',

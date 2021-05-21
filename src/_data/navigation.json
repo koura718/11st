@@ -5,6 +5,10 @@
       "url": "/"
     },
     {
+      "text": "Pug",
+      "url": "/index_pug/"
+    },
+    {
       "text": "About",
       "url": "/about/"
     }
